@@ -4,6 +4,12 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-
-<ul id="ztree" class="ztree"></ul>
-
+<router-outlet></router-outlet>
+<ul>
+  <li>
+    <a [routerLink]="['/shop']" >shop</a>
+  </li>
+  <li>
+    <a [routerLink]="['/cms']" >CMS</a>
+  </li>
+</ul>
